@@ -1,0 +1,401 @@
+/*
+* Colors used in design.
+*   primary: #0078aa;
+*   dark: #363636;
+*   light: #fff;
+*/
+ul{
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #363636;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 130px;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  z-index: 1;
+}
+.main-navigation {
+  width: 50%;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.menu li a:hover {
+  color: #0078aa;
+}
+
+.banner {
+  background-image: url(../img/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  border-bottom-right-radius: 15%;
+}
+.banner-text {
+  width: 34%;
+  margin: 50px auto 50px 130px;
+}
+.banner-text h1 {
+  font-size: 34px;
+}
+.banner-text > p {
+  color:rgb(184, 184, 184);
+}
+.banner-icons {
+  display: flex;
+}
+.icon-block {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #0078aa;
+  background-color: #0078aa;
+  color: #0078aa;
+  border-radius: 50%;
+  text-align: center;
+}
+svg{
+  fill: #fff;
+}
+.icon-block:hover  {
+  background-color: transparent;
+}
+.icon-block:hover svg {
+  fill: #0078aa;
+}
+
+.icon-block > svg {
+  padding-top: 8px;
+}
+.icon-block:not(:last-child) {
+  margin-right: 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin: 70px 0;
+}
+.home-arrow {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 1;
+}
+.about-clinic-block {
+  width: 28%;
+  margin-left: 20px;
+}
+.about-clinic-block h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.about-clinic-block > p {
+  text-transform: uppercase;
+  color: #0078aa;
+  margin: 5px 0;
+  font-size: 14px;
+}
+.about-list-item h4{
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.about-list-item h4::before {
+  content: '\21E8';
+  color: #0078aa;
+  margin-right: 10px;
+}
+.about-list-item p {
+  margin-top: 5px;
+  color: #363636;
+  font-size: 14px;
+}
+
+.services {
+  background-image: url(../img/services_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 0; 
+}
+.services > p {
+  text-transform: uppercase;
+  color: #363636;
+  margin: 5px 0 20px 0; 
+  font-size: 14px;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 25px;
+  row-gap: 25px;
+  width: 82%; 
+  margin: 0 auto;
+}
+.services-list-item {
+  background-color: #fff;
+  padding: 15px;
+}
+.services-list-item h4 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.services-list-item p {
+  margin-top: 8px;
+}
+
+.pricing {
+  background-image: url(../img/pricing_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+.pricing h2{
+  margin-bottom: 0;
+  font-size: 32px;
+}
+.pricing > p {
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 55px;
+  width: 77%;
+}
+.card-item {
+  width: 33%;
+  background-color: #47c9e5;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.card-item  h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+.card-item p{
+  font-size: 14px;
+}
+.treatment {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 52px;
+  font-weight: 700;
+}
+.card-item-blue {
+  width: 33%;
+  border: 2px solid #0078aa;
+  background-color: #fff;
+  color: #0078aa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+.card-item-blue p {
+  font-size: 14px;
+}
+.card-item-blue h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.close {
+  font-size: 14px;
+  margin: 15px 0;
+}
+.card-item-btn {
+  border: 2px solid #0078aa;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 8px 15px;
+  color: #0078aa;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+.contact img {
+  width: 100%;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin: 0 0 40px 15px;
+}
+.contact-form h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+.contact-form p {
+  font-size: 14px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+input {
+  margin: 15px 15px 15px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+input::placeholder {
+  font-style: italic;
+  font-size: 12px;
+}
+.submit-btn {
+  align-self: flex-start;
+  border: none;
+  background-color: #0078aa;
+  border-radius: 8px;
+  padding: 13px 18px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+}
+.submit-btn:hover {
+  color: #0078aa;
+  background-color: #fff;
+  border: 1px solid #0078aa;
+  cursor: pointer;
+}
+
+footer{
+  background-color: #363636;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  margin-top: -4px;
+}
+footer p{
+  margin: 0;
+}
+/* MOBILE */
+@media screen and (max-width: 767px ){
+  .header,
+  .about,
+  .services,
+  .cards,
+  .contact  {
+    flex-direction: column;
+  }
+  .main-navigation {
+    width: 100%;
+  }
+  .banner {
+    background-position: 30%;
+  }
+  .banner-text {
+    width: 75% !important;
+    margin: 90px auto !important;
+    text-align: center;
+  }
+  .banner-icons {
+    margin: 0 49px;
+  }
+  .about img {
+    width: 100% !important;
+  }
+  .about-clinic-block {
+    width: 100% !important;
+    margin: 0;
+    text-align: center;
+  }
+  .services-list {
+    grid-template-columns: auto;
+  }
+  .card-item,
+  .card-item-blue {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .contact-img {
+    width: 100% !important;
+  }
+  .contact img {
+    width: 100% !important;
+  }
+  .contact-form {
+    width: 95%;
+    text-align: center;
+  }
+  .submit-btn {
+    align-self: center;
+  }
+}   
+/* TABLET */
+@media screen and (max-width: 1279px) {
+  .header {
+    padding: 10px 15px;
+  }
+  .banner {
+    padding: 1px;
+    border-bottom-right-radius: 0;
+  }
+  .banner-text {
+    width: 58%;
+    margin: 90px auto 50px 5px;
+  }
+  .about img{
+    width: 50%;
+  }
+  .about-clinic-block {
+    width: 46%;
+  }
+  .contact-img {
+    width: 50%;
+    overflow: hidden;
+  }
+  .contact img {
+    width: 172%;
+  }
+}
